@@ -3,6 +3,10 @@
 int main(int argc, const char * argv[]) {
     float t;
     char system;
+    if (argc<2) {
+        printf("Error input. Try again\n");
+        return 1;
+    }
     sscanf(argv[1], "%f", &t);
     sscanf(argv[2], "%c", &system);
     switch (system) {
